@@ -14,8 +14,9 @@
     margin-bottom: 10px;
 }
 .loginHeader > img{
-    width: 100px;
+    width: 200px;
     border-radius: 10px;
+    margin-bottom: 25px;
 }
 .loginHeader > h1{
     font-size: 1.5em;   

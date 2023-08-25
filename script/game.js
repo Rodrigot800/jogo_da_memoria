@@ -37,11 +37,7 @@ const checkCards = () => {
             firstCard = ''
             secondCard = ''
         }, 500)
-
-    
     }
-
-
 }
 
 const revealcard = ({ target }) => {

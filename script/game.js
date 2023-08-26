@@ -29,7 +29,7 @@ let secondCard = ''
 const checkEndGame = () =>{
     const disabledCards = document.querySelectorAll('.disabled')
 
-    if (disabledCards.length == 2) {
+    if (disabledCards.length == 20) {
         setTimeout(() => {
             clearInterval(this.loop)
             alert("Parabéns "+playerName+", seu tempo foi de "+tempo.innerHTML+" seg")

@@ -68,6 +68,7 @@ header{
 #reiniciar{
     color: white;
     background-color: rgb(63, 174, 234);
+    box-shadow: 2px 2px 2px rgb(100, 190, 250);
     padding: 15px;
     width: auto;
     height: auto;
@@ -86,6 +87,7 @@ header{
         left: 50%;
         top: 95%;
         transform: translate(-50%, -50%);
+        height: 50px;
         
     }
 }

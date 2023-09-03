@@ -82,8 +82,8 @@ header{
     main{
         background-image: url(../imagens/bckraundCll.png);
     }
-    #grid{
-        margin-top: 5vh;
+    .grid{
+        margin-top: 10%;
     }
     #reiniciar{
         position: absolute;

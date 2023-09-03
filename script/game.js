@@ -129,3 +129,10 @@ window.onload = () => {
     loadGame()
 
 }
+
+function reiniciarGame() {
+    location.reload()
+}
+
+var reiniciar = document.getElementById('reiniciar')
+reiniciar.addEventListener('click', reiniciarGame )

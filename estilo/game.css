@@ -27,7 +27,6 @@ header{
     width: 100%;
     max-width:550px;
     margin: auto;
-    margin-top: 5vh;
 }
 .card{
     aspect-ratio: 3/4;
@@ -83,10 +82,13 @@ header{
     main{
         background-image: url(../imagens/bckraundCll.png);
     }
+    #grid{
+        margin-top: 5vh;
+    }
     #reiniciar{
         position: absolute;
         left: 50%;
-        top: 95%;
+        top: 90%;
         transform: translate(-50%, -50%);
         height: 50px;
         

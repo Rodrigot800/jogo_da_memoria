@@ -5,18 +5,16 @@ main{
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../imagens/backgraund1.png);
     background-size: cover;
     background-position: center;
-    padding: 20px 20px 50px;
+    padding: 10px 10px 50px;
 }
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 550px;
-    padding: 10px;
+    max-width: 620px;
     background-color: rgba(255, 255, 255, 0.8);
     margin: 10px 0px;
     padding: 15px;
@@ -25,9 +23,9 @@ header{
 .grid{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    gap: 5px;
     width: 100%;
-    max-width:550px;
+    max-width:620px;
     margin: auto;
 }
 .card{
@@ -59,4 +57,40 @@ header{
 .back{
     background-image:  url(../imagens/luffy.png);
     backface-visibility: hidden;
+}
+.ocultar{
+    display: none;
+}
+.exibir{
+    display: block;
+}
+
+#reiniciar{
+    color: white;
+    background-color: rgb(63, 174, 234);
+    padding: 15px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+#reiniciar:hover{
+    background-color: rgb(111, 205, 255);
+}
+
+@media  screen and (max-width: 800px) {
+    main{
+        background-image: url(../imagens/bckraundCll.png);
+    }
+    #reiniciar{
+        position: absolute;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
+@media screen and (min-width: 800px) {
+    main{
+        background-image: url(../imagens/backgraund1.png);
+    }
 }

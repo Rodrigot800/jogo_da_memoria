@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programa Criptografia</h1>
+
+    <p>Mensagem: <input type="text" id="inMensagem"></p> <br>
+    <input type="button" value="Criptografar" id="btCriptografar">
+    <input type="button" value="DeCriptografar" id="btDecriptografar">
+
+    <pre id="outMensagens"></pre>
+
+    <script>
+
+        function CriptografarMSG () {
+            var inMensagem = document.getElementById('inMensagem')
+            var outMensagens = document.getElementById('outMensagens')
+
+            var Mensagem = inMensagem.value 
+            var Resposta = ""
+
+            if ( Mensagem == "") {
+                alert("digite a mensagem...")
+                inMensagem.focus()
+                return
+            }
+
+            var tam = Mensagem.length
+
+            for (let i = 1; i <tam ; i += 2) {
+
+                Resposta += Mensagem.charAt(i)
+                
+            }
+            for (let i = 0; i <tam ; i += 2) {
+
+                Resposta += Mensagem.charAt(i)
+                
+            }
+
+            outMensagens.textContent = Resposta
+
+        }
+
+        function DeCriptografarMSG () {
+            var inMensagem = document.getElementById('inMensagem')
+            var outMensagens = document.getElementById('outMensagens')
+
+            var Mensagem = inMensagem.value 
+            var Resposta = ""
+            var tam = Mensagem.length
+            var metade = Math.floor(tam / 2)
+
+            if (tam % 2 == 0 ) {
+                for (let i = metade; i < tam; i++) {
+                    Resposta += Mensagem.charAt(i)
+                    Resposta += Mensagem.charAt(i - metade)
+                }
+            } else {
+                for (var i = metade; i < tam - 1 ; i++) {
+                    Resposta += Mensagem.charAt(i)
+                    Resposta += Mensagem.charAt(i - metade)
+                }
+                Resposta += Mensagem.charAt( i )
+            }
+
+            outMensagens.textContent = Resposta
+        }
+
+        var btCriptografar = document.getElementById('btCriptografar')
+        btCriptografar.addEventListener('click', CriptografarMSG)
+
+        var btDecriptografar = document.getElementById('btDecriptografar')
+        btDecriptografar.addEventListener('click', DeCriptografarMSG)
+
+
+    </script>
+
+</body>
+</html>

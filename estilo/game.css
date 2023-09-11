@@ -99,3 +99,8 @@ header{
         background-image: url(../imagens/backgraund1.png);
     }
 }
+@media screen and ( min-width: 1000px) {
+    .grid{
+        max-width: 1000px;
+    }
+}

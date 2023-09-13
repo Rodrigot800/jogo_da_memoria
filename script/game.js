@@ -41,7 +41,11 @@ const checkEndGame = () => {
     }, 500);
   }
 };
-
+function aguardo() {
+  return new Promise((resolve) =>  {
+    
+  })
+}
 const checkCards = () => {
   const firstFrontCard = firstCard.getAttribute("data-frontCard");
   const secondFrontCard = secondCard.getAttribute("data-frontCard");
